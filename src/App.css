@@ -59,11 +59,15 @@ body {
     width: 77px;
     flex: 1;
     background: url(img/octocat.png)no-repeat center;
+    display: block;
 }
 
-.github>* {
-    height: 50px;
-    width: 50px;
+.github>a {
+    margin-left: 2em;
+    flex: 1;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
 }
 
 .year {
@@ -76,6 +80,10 @@ body {
     margin-right: 1em;
     text-decoration: none;
     color: white;
+}
+
+.github:hover {
+    cursor: pointer;
 }
 
 .email:hover {

@@ -38,7 +38,7 @@ class Footer extends Component {
     return (
       <div className="footer">
         <div className="github">
-          <a href="https://github.com/TimothyJohnK" />
+          <a href="https://github.com/TimothyJohnK" className="footer_link" />
         </div>
         <div className="year">
           <h3>© {year.getFullYear()}</h3>
