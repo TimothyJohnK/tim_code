@@ -58,18 +58,8 @@ body {
     height: 32px;
     width: 38px;
     flex: 1;
-    /* background: url(img/octocat.png)no-repeat center; */
     display: block;
 }
-
-
-/* .github>a {
-    margin-left: 2em;
-    flex: 1;
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-} */
 
 .year {
     flex: 6;
