@@ -20,12 +20,13 @@ class Intro extends Component {
     return (
       <div className="skills">
         <ul className="intro">
-          <li>UIX</li>
+          <li>UX</li>
           <li>HTML/CSS</li>
-          <li>Javascript</li>
+          <li>JavaScript</li>
           <li>React</li>
           <li>Webpack</li>
           <li>Babel</li>
+          <li>npm</li>
           <li>Git</li>
         </ul>
       </div>
@@ -38,7 +39,9 @@ class Footer extends Component {
     return (
       <div className="footer">
         <div className="github">
-          <a href="https://github.com/TimothyJohnK" className="footer_link" />
+          <a href="https://github.com/TimothyJohnK" className="footer_link">
+            <img src={require("./img/octocat.png")} alt="github octocat" />
+          </a>
         </div>
         <div className="year">
           <h3>© {year.getFullYear()}</h3>
