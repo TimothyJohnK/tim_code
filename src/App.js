@@ -25,7 +25,7 @@ class Intro extends Component {
           <li>JavaScript</li>
           <li>React</li>
           <li>Webpack</li>
-          <li>Babel</li>
+          <li>Babel</li>–
           <li>npm</li>
           <li>Git</li>
         </ul>
