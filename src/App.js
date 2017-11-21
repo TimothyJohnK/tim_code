@@ -25,7 +25,7 @@ class Intro extends Component {
           <li>JavaScript</li>
           <li>React</li>
           <li>Webpack</li>
-          <li>Babel</li>–
+          <li>Babel</li>
           <li>npm</li>
           <li>Git</li>
         </ul>
@@ -41,6 +41,11 @@ class Footer extends Component {
         <div className="github">
           <a href="https://github.com/TimothyJohnK" className="footer_link">
             <img src={require("./img/octocat.png")} alt="github octocat" />
+          </a>
+        </div>
+        <div className="imdb">
+          <a href="http://www.imdb.com/name/nm9373855/" className="footer_link">
+            <img src={require("./img/imdb_logo_small.png")} alt="imdb logo" />
           </a>
         </div>
         <div className="year">
