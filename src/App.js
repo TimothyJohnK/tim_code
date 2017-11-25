@@ -35,7 +35,6 @@ class Intro extends Component {
 
 class Footer extends Component {
   render() {
-    const year = new Date();
     return (
       <div className="footer">
         <div className="github">
