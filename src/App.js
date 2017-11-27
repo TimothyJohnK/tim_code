@@ -44,7 +44,15 @@ class Footer extends Component {
         </div>
         <div className="imdb">
           <a href="http://www.imdb.com/name/nm9373855/" className="footer_link">
-            <img src={require('./img/imdb_logo_small.png')} alt="imdb logo" />
+            <img src={require('./img/imdb_logo_sm.png')} alt="imdb logo" />
+          </a>
+        </div>
+        <div className="meetup">
+          <a
+            href="https://www.meetup.com/members/224711695/"
+            className="footer_link"
+          >
+            <img src={require('./img/meetup_logo_sm.png')} alt="meetup logo" />
           </a>
         </div>
         <div>
