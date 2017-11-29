@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 
+const Logo = () => <div className="logo" />;
+const TimHead = () => <div className="tim_head" />;
+
 class Header extends Component {
   render() {
     return (
@@ -13,12 +16,10 @@ class Header extends Component {
   }
 }
 
-const Logo = () => <div className="logo" />;
-
-class Intro extends Component {
+class Skills extends Component {
   render() {
     return (
-      <ul className="intro">
+      <ul className="skills">
         <li>JavaScript</li>
         <li>React</li>
         <li>Next</li>
@@ -69,8 +70,9 @@ export default class App extends Component {
     return (
       <div>
         <Logo />
+        <TimHead />
         <Header />
-        <Intro />
+        <Skills />
         <Footer />
       </div>
     );

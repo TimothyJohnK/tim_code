@@ -15,10 +15,10 @@ body {
     flex-direction: column;
 }
 
-@keyframes logo-pulser {
+@keyframes pulser {
     0%,
     100% {
-        opacity: 0.4;
+        opacity: 0.6;
     }
     50% {
         opacity: 0.9;
@@ -26,18 +26,23 @@ body {
 }
 
 .logo {
-    opacity: 0.4;
-    background: url(img/logo-recent.png) no-repeat center;
-    height: 13em;
-    width: 13em;
+    background: url(img/logo_round.png) no-repeat center;
+    height: 181px;
+    width: 176px;
     border-radius: 50%;
     margin: 1em auto;
-    animation: logo-pulser 7s infinite;
+    animation: pulser 7s infinite;
+}
+
+.tim_head {
+    background: url(img/tim_head.png) no-repeat center;
+    height: 7em;
+    width: 7em;
+    margin: 1em auto;
 }
 
 .header {
-    padding-top: 2em;
-    height: 8em;
+    padding: 3em 0 1em 0;
     flex: 0;
     justify-content: space-around;
     align-items: center;
@@ -45,7 +50,7 @@ body {
     margin: auto;
 }
 
-.intro {
+.skills {
     text-align: center;
     flex: 1;
     list-style-type: none;
@@ -67,11 +72,10 @@ body {
 }
 
 .github {
-    margin-left: 0.5em;
     height: 40px;
     width: 50px;
     position: absolute;
-    left: 0.5em;
+    left: 0.3em;
 }
 
 .imdb {
@@ -80,14 +84,14 @@ body {
 }
 
 .meetup {
-    left: 6.5em;
+    left: 6.6em;
     position: absolute;
 }
 
 .email {
     position: absolute;
     right: 1em;
-    bottom: 20px;
+    bottom: 1.5em;
     text-decoration: none;
     color: white;
 }
@@ -100,7 +104,7 @@ body {
     color: lightblue;
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 500px) {
     .header {
         margin: 0.8em;
         font-size: 0.8em;
