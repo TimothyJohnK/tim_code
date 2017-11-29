@@ -4,13 +4,11 @@ import './App.css';
 const Logo = () => <div className="logo" />;
 const TimHead = () => <div className="tim_head" />;
 
-class Header extends Component {
+class Hello extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="header">
-          <h1>Hello! I'm Tim Kirchhof. I design and build user interfaces.</h1>
-        </header>
+      <div className="hello">
+        <h1>Hello! I'm Tim Kirchhof. I design and build user interfaces.</h1>
       </div>
     );
   }
@@ -71,7 +69,7 @@ export default class App extends Component {
       <div>
         <Logo />
         <TimHead />
-        <Header />
+        <Hello />
         <Skills />
         <Footer />
       </div>

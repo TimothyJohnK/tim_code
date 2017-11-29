@@ -13,6 +13,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 @keyframes pulser {
@@ -41,34 +42,32 @@ body {
     margin: 1em auto;
 }
 
-.header {
-    padding: 3em 0 1em 0;
+.hello {
+    padding-top: 1em;
     flex: 0;
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    margin: auto;
 }
 
 .skills {
     text-align: center;
     flex: 1;
     list-style-type: none;
-    padding: 0;
-    margin: 2em 0 5em;
+    padding: 3em 0 0 0;
+    margin-bottom: 5em;
 }
 
 .footer {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.2);
     position: absolute;
     bottom: 0;
     height: 4em;
-    justify-content: space-around;
 }
 
 .github {
@@ -89,9 +88,8 @@ body {
 }
 
 .email {
-    position: absolute;
-    right: 1em;
-    bottom: 1.5em;
+    margin-right: 0.7em;
+    flex: 0;
     text-decoration: none;
     color: white;
 }
@@ -105,11 +103,22 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-    .header {
+    .hello {
         margin: 0.8em;
         font-size: 0.8em;
     }
     .email {
         font-size: 0.9em;
+    }
+    .logo {
+        width: 106px;
+        height: 109px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .logo,
+    .tim_head {
+        padding: 1em;
     }
 }
