@@ -38,12 +38,22 @@ class Footer extends Component {
       <div className="footer">
         <div className="github">
           <a href="https://github.com/TimothyJohnK" className="footer_link">
-            <img src={require('./img/octocat.png')} alt="github octocat" />
+            <img
+              src={require('./img/octocat_256.png')}
+              height="44px"
+              width="44px"
+              alt="github octocat"
+            />
           </a>
         </div>
         <div className="imdb">
           <a href="http://www.imdb.com/name/nm9373855/" className="footer_link">
-            <img src={require('./img/imdb_logo_sm.png')} alt="imdb logo" />
+            <img
+              src={require('./img/IMDB_Logo.png')}
+              height="26px"
+              width="54px"
+              alt="imdb logo"
+            />
           </a>
         </div>
         <div className="meetup">
@@ -51,7 +61,12 @@ class Footer extends Component {
             href="https://www.meetup.com/members/224711695/"
             className="footer_link"
           >
-            <img src={require('./img/meetup_logo_sm.png')} alt="meetup logo" />
+            <img
+              src={require('./img/Meetup_Logo.png')}
+              height="50px"
+              width="50px"
+              alt="meetup logo"
+            />
           </a>
         </div>
         <div>

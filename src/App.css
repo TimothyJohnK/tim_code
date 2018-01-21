@@ -59,7 +59,7 @@ body {
     text-align: center;
     flex: 1;
     list-style-type: none;
-    padding: 3em 0 0 0;
+    padding: 2em 0 0 0;
     margin-bottom: 5em;
 }
 
@@ -76,20 +76,24 @@ body {
 }
 
 .github {
-    height: 40px;
+    height: 50px;
     width: 50px;
     position: absolute;
-    left: 0.3em;
+    left: 0.5em;
 }
 
 .imdb {
-    left: 3em;
+    height: 26px;
+    width: 54px;
     position: absolute;
+    left: 3.2em;
 }
 
 .meetup {
-    left: 6.6em;
+    height: 50px;
+    width: 50px;
     position: absolute;
+    left: 6.8em;
 }
 
 .email {
