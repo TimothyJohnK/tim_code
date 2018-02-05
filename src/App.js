@@ -21,7 +21,6 @@ class Skills extends Component {
         <li>JavaScript</li>
         <li>React</li>
         <li>Next</li>
-        <li>UX</li>
         <li>HTML/CSS</li>
         <li>Webpack</li>
         <li>Babel</li>
