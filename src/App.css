@@ -13,7 +13,7 @@ body {
     min-height: 100%;
     height: auto;
     background-size: cover;
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -37,7 +37,7 @@ body {
     border-radius: 50%;
     background-size: contain;
     margin: 2em auto;
-    animation: pulser 7s infinite;
+    /* animation: pulser 7s infinite; */
 }
 
 .tim_head {
