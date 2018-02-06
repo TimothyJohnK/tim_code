@@ -21,6 +21,8 @@ class Skills extends Component {
         <li>JavaScript</li>
         <li>React</li>
         <li>Next</li>
+
+        
         <li>HTML/CSS</li>
         <li>Webpack</li>
         <li>Babel</li>
@@ -80,7 +82,7 @@ class Footer extends Component {
 export default class App extends Component {
   render() {
     return (
-      <div>
+      <div className="content">
         <Logo />
         <TimHead />
         <Hello />
