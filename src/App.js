@@ -19,6 +19,7 @@ const Skills = () => (
     <li>Git</li>
     <li>Next</li>
     <li>styled-components</li>
+    <li>GIMP</li>
   </ul>
 );
 const Footer = () => (
