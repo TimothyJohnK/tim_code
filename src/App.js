@@ -22,6 +22,25 @@ const Skills = () => (
     <li>GIMP</li>
   </ul>
 );
+
+const Basho = () => (
+  <div className="site basho">
+    <a href="http://basho.ai/" />
+  </div>
+);
+const KingBaron = () => (
+  <div className="site kingbaron">
+    <a href="http://kingbaron.surge.sh/" />
+  </div>
+);
+
+const Portfolio = () => (
+  <div className="portfolio">
+    <Basho />
+    <KingBaron />
+  </div>
+);
+
 const Footer = () => (
   <div className="footer">
     <div className="github">
@@ -65,14 +84,20 @@ const Footer = () => (
   </div>
 );
 
+const ContentImgWrapper = () => (
+  <div className="content_img_wrapper">
+    <TimHead />
+    <Hello />
+    <Skills />
+  </div>
+);
+
 export default class App extends Component {
   render() {
     return (
       <div className="content">
-        <Logo />
-        <TimHead />
-        <Hello />
-        <Skills />
+        <ContentImgWrapper />
+        <Portfolio />
         <Footer />
       </div>
     );
