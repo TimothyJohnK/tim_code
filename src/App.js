@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 
-const Logo = () => <div className="logo" />;
+const Logo = () => (
+  <div className="header">
+    <div className="logo" />
+  </div>
+);
 const TimHead = () => <div className="tim_head" />;
 const Hello = () => (
   <div className="hello">
@@ -33,11 +37,17 @@ const KingBaron = () => (
     <a href="http://kingbaron.surge.sh/" />
   </div>
 );
+const SoundCloudTJK = () => (
+  <div className="site soundcloud">
+    <a href="https://soundcloud.com/timkirchhofmusic/the-joy-of-silver" />
+  </div>
+);
 
 const Portfolio = () => (
   <div className="portfolio">
     <Basho />
     <KingBaron />
+    <SoundCloudTJK />
   </div>
 );
 
@@ -96,6 +106,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="content">
+        <Logo />
         <ContentImgWrapper />
         <Portfolio />
         <Footer />
