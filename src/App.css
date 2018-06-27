@@ -20,6 +20,7 @@ body {
     background-size: cover;
     padding: 24px 0;
     color: rgb(252, 255, 212);
+    text-align: center;
 }
 
 .header {
@@ -83,6 +84,12 @@ body {
     display: block;
     min-height: 200px;
     min-width: 200px;
+}
+
+.add_text {
+    padding: 0 1em;
+    margin: 0 auto;
+    max-width: 900px;
 }
 
 
@@ -187,7 +194,6 @@ body {
 }
 
 @media screen and (min-width: 1000px) {
-    /* .logo, */
     .tim_head {
         padding: 1em;
     }

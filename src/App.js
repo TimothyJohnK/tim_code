@@ -99,6 +99,12 @@ const ContentImgWrapper = () => (
     <TimHead />
     <Hello />
     <Skills />
+    <div className="add_text">
+      I also perform, teach, compose and produce sonically lush and compelling
+      music for film, commercial usage, and live performance. Check out the IMDB
+      link in the footer for my film credits and checkout the portfolio section
+      for a few examples of my composition.
+    </div>
   </div>
 );
 
