@@ -29,32 +29,50 @@ const Skills = () => (
 
 const Basho = () => (
   <div className="site basho">
-    <a href="http://basho.ai/" />
+    <a
+      href="http://basho.ai/"
+      alt="AI generated haiku site named after famous japanese poet Basho"
+    />
   </div>
 );
 const KingBaron = () => (
   <div className="site kingbaron">
-    <a href="http://kingbaron.surge.sh/" />
+    <a
+      href="http://kingbaron.surge.sh/"
+      alt="music site for the jazz band King Baron"
+    />
   </div>
 );
 const SoundCloudTJK = () => (
   <div className="site soundcloud">
-    <a href="https://soundcloud.com/timkirchhofmusic/the-joy-of-silver" />
+    <a
+      href="https://soundcloud.com/timkirchhofmusic/the-joy-of-silver"
+      alt="Soundcloud music examples"
+    />
   </div>
 );
 
 const Portfolio = () => (
-  <div className="portfolio">
-    <Basho />
-    <KingBaron />
-    <SoundCloudTJK />
+  <div>
+    <div className="portfolio_header">
+      <div className="portfolio_title">Portfolio</div>
+      <div>Please click on the images below to see examples of my design</div>
+    </div>
+    <div className="portfolio_wrapper">
+      <div className="portfolio">
+        <Basho />
+        <KingBaron />
+        <SoundCloudTJK />
+      </div>
+    </div>
   </div>
 );
 
-const Footer = () => (
-  <div className="footer">
-    <div className="github">
-      <a href="https://github.com/TimothyJohnK" className="footer_link">
+const Header = () => (
+  <div className="header">
+    <Logo />
+    <div className="github header_link">
+      <a href="https://github.com/TimothyJohnK">
         <img
           src={require('./img/octocat_256.png')}
           height="44px"
@@ -63,8 +81,8 @@ const Footer = () => (
         />
       </a>
     </div>
-    <div className="imdb">
-      <a href="http://www.imdb.com/name/nm9373855/" className="footer_link">
+    <div className="imdb header_link">
+      <a href="http://www.imdb.com/name/nm9373855/">
         <img
           src={require('./img/IMDB_Logo.png')}
           height="26px"
@@ -73,22 +91,14 @@ const Footer = () => (
         />
       </a>
     </div>
-    <div className="meetup">
-      <a
-        href="https://www.meetup.com/members/224711695/"
-        className="footer_link"
-      >
+    <div className="meetup header_link">
+      <a href="https://www.meetup.com/members/224711695/">
         <img
           src={require('./img/Meetup_Logo.png')}
           height="50px"
           width="50px"
           alt="meetup logo"
         />
-      </a>
-    </div>
-    <div>
-      <a href="mailto: Tim@VectorLab.com" className="email">
-        Tim@VectorLab.com
       </a>
     </div>
   </div>
@@ -102,8 +112,8 @@ const ContentImgWrapper = () => (
     <div className="add_text">
       I also perform, teach, compose and produce sonically lush and compelling
       music for film, commercial usage, and live performance. Check out the IMDB
-      link in the footer for my film credits and checkout the portfolio section
-      for a few examples of my composition.
+      link in the header for my film credits and checkout the portfolio section
+      for examples of my composition.
     </div>
   </div>
 );
@@ -112,10 +122,9 @@ export default class App extends Component {
   render() {
     return (
       <div className="content">
-        <Logo />
+        <Header />
         <ContentImgWrapper />
         <Portfolio />
-        <Footer />
       </div>
     );
   }
