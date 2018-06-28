@@ -135,6 +135,11 @@ body {
     background-size: cover;
 }
 
+.urbanfarmhand {
+    background: url(img/urbanfarmhand.png) no-repeat center;
+    background-size: cover;
+}
+
 .github {
     height: 50px;
     width: 50px;
