@@ -25,7 +25,6 @@ const Skills = () => (
     <li>GIMP</li>
     <li>Redux </li>
     <li>Node.js </li>
-    <li>Security</li>
     <li>Express.js</li>
     <li>SemanticUI</li>
     <li>PostgresSQL </li>
