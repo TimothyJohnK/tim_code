@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 const Logo = () => (
-  <div className="header">
+  <div className="footer">
     <div className="logo" />
   </div>
 );
@@ -14,16 +14,27 @@ const Hello = () => (
 );
 const Skills = () => (
   <ul className="skills">
-    <li>JavaScript</li>
     <li>React</li>
+    <li>JavaScript</li>
     <li>HTML/CSS</li>
     <li>Webpack</li>
     <li>Babel</li>
     <li>npm</li>
     <li>Git</li>
     <li>Next</li>
-    <li>styled-components</li>
     <li>GIMP</li>
+    <li>Redux </li>
+    <li>Node.js </li>
+    <li>Security</li>
+    <li>Express.js</li>
+    <li>SemanticUI</li>
+    <li>PostgresSQL </li>
+    <li>Authorization</li>
+    <li>styled-components</li>
+    <li>RESTful API Design</li>
+    <li>SQL Authentication</li>
+    <li>Scalable Infrastructure </li>
+    <li>Production and Deployment</li>
   </ul>
 );
 
@@ -38,7 +49,7 @@ const Basho = () => (
 const KingBaron = () => (
   <div className="site kingbaron">
     <a
-      href="http://kingbaron.surge.sh/"
+      href="http://kingbaron.com/"
       alt="music site for the jazz band King Baron"
     />
   </div>
@@ -48,6 +59,14 @@ const SoundCloudTJK = () => (
     <a
       href="https://soundcloud.com/timkirchhofmusic/the-joy-of-silver"
       alt="Soundcloud music examples"
+    />
+  </div>
+);
+const Spotify = () => (
+  <div className="site spotify">
+    <a
+      href="https://open.spotify.com/artist/5kOzz7GshgVRuGKupWgY66?si=wIMo9OdrScy1c_sqktajdw"
+      alt="spotify artist page"
     />
   </div>
 );
@@ -62,7 +81,7 @@ const Urbanfarmhand = () => (
 
 const Portfolio = () => (
   <div>
-    <div className="portfolio_header">
+    <div className="portfolio_footer">
       <div className="portfolio_title">Portfolio</div>
       <div>Please click on the images below to see examples of my design</div>
     </div>
@@ -70,6 +89,7 @@ const Portfolio = () => (
       <div className="portfolio">
         <Basho />
         <KingBaron />
+        <Spotify />
         <SoundCloudTJK />
         <Urbanfarmhand />
       </div>
@@ -77,10 +97,10 @@ const Portfolio = () => (
   </div>
 );
 
-const Header = () => (
-  <div className="header">
+const Footer = () => (
+  <div className="footer">
     <Logo />
-    <div className="github header_link">
+    <div className="github footer_link">
       <a href="https://github.com/TimothyJohnK">
         <img
           src={require('./img/octocat_256.png')}
@@ -90,7 +110,7 @@ const Header = () => (
         />
       </a>
     </div>
-    <div className="imdb header_link">
+    <div className="imdb footer_link">
       <a href="http://www.imdb.com/name/nm9373855/">
         <img
           src={require('./img/IMDB_Logo.png')}
@@ -100,7 +120,7 @@ const Header = () => (
         />
       </a>
     </div>
-    <div className="meetup header_link">
+    <div className="meetup footer_link">
       <a href="https://www.meetup.com/members/224711695/">
         <img
           src={require('./img/Meetup_Logo.png')}
@@ -121,7 +141,7 @@ const ContentImgWrapper = () => (
     <div className="add_text">
       I also perform, teach, compose and produce sonically lush and compelling
       music for film, commercial usage, and live performance. Check out the IMDB
-      link in the header for my film credits and checkout the portfolio section
+      link in the footer for my film credits and checkout the portfolio section
       for examples of my composition.
     </div>
   </div>
@@ -131,9 +151,9 @@ export default class App extends Component {
   render() {
     return (
       <div className="content">
-        <Header />
         <ContentImgWrapper />
         <Portfolio />
+        <Footer />
       </div>
     );
   }

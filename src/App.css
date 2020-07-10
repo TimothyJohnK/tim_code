@@ -15,7 +15,7 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.header {
+.footer {
     width: 100%;
     height: 4em;
     display: flex;
@@ -26,7 +26,7 @@ body {
     padding-bottom: .2em;
 }
 
-.header_link {
+.footer_link {
     margin: .2em 1em 0 1em;
 }
 
@@ -37,6 +37,7 @@ body {
     font-size: 1.1em;
     color: white;
     text-align: center;
+
 }
 
 .logo {
@@ -52,13 +53,14 @@ body {
 }
 
 .tim_head {
-    background: url(img/tim_head_orig.png) no-repeat center;
+    background: url(img/tim_headshot.jpg) no-repeat center;
     background-size: contain;
     height: 96px;
     width: 96px;
     margin: 2em auto;
-    border-radius: 50%;
+    border-radius: 20%;
     border: 1px solid rgba(0, 0, 0, .3);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5)
 }
 
 .hello {
@@ -106,7 +108,7 @@ body {
     font-size: 2em;
 }
 
-.portfolio_header {
+.portfolio_footer {
     padding: .6em 0;
     color: white;
     background-color: rgb(37, 37, 37);
@@ -127,6 +129,11 @@ body {
 
 .kingbaron {
     background: url(img/kingbaron.png) no-repeat center;
+    background-size: cover;
+}
+
+.spotify {
+    background: url(img/dog_reference.png) no-repeat center;
     background-size: cover;
 }
 
@@ -171,26 +178,31 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-    .header_link {
+    .footer_link {
         margin: 0 .4em;
     }
+
     .tim_head {
         width: 96px;
         height: 96px;
     }
+
     .hello {
         padding: 0;
         margin: 0.8em;
         font-size: 0.8em;
     }
+
     .skills {
         padding: 0;
     }
+
     .portfolio {
         flex-direction: column;
         max-width: 200px;
         margin: 0 auto;
     }
+
     .site {
         margin: 1em 0;
     }
